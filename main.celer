@@ -162,9 +162,12 @@ _route:
     - _Memory::IrchPlain
 
     - .dir(BLSS)
-    - Do any% castle route
+    - Do your fav any% castle route
     - _Material<Razorshroom,1>:
         coord: [-390.02, 166.73, -842.82]
+
+    - _Cook<Attack Up>:
+        comment: 3 Razorshroom + 2 Thistle
 
     - _Memory::HyruleCastle
 
