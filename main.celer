@@ -94,11 +94,6 @@ _route:
 
     - .dir(BLSS)
 
-    - Activate Myahm Agana:
-        coord: [3387.62, 240.64, 2214.92]
-        icon: shrine
-
-    - .dir(N>)
     - .loc(Blue Flame):
         coord: [3447.5,1982]
         comment: Use Boko Spear.
