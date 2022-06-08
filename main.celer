@@ -18,6 +18,7 @@ _route:
     - _Material<Spicy Pepper,6>:
         line-color: rgb(204,204,204)
         coord: [-965.30, 238.52, 1956.67]
+        notes: Probably get the Steak too.
 
     - _Equipment::Shield<Pot Lid>:
         coord: [-952.34, 238.33, 1959.44]
@@ -35,7 +36,7 @@ _route:
 
     - _Material<Arrow,5>
 
-    - .dir(BLSS):
+    - .dir(BLSS) with pot:
         notes: .link([Skew fix]https://twitter.com/TheKoroks/status/1477147629427433472?s=20&t=67Yr65osvtxvFD8Voud8vQ)
 
     - _Shrine::JaBaij:
@@ -56,8 +57,7 @@ _route:
     - _Material<Hyrule Herb, 5>:
         coord: [-709.74, 171.46, 1481.88]
 
-    - .dir(BLSS)
-    - .loc(Tree):
+    - .dir(BLSS) to .loc(tree):
         coord: [-839,2273.5]
 
     - .dir(Tree WB)
@@ -77,13 +77,13 @@ _route:
   - Camera:
     - .dir(BLSS)
 
-    - _Npc::SheikaFemale<Paya and Impa>:
+    - _Npc::SheikaFemale<Impa 1>:
         line-color: rgb(221,160,221)
         movements:
             - to: [1784.43, 228.91, 986.46]
             - to: [1772.71, 229.43, 984.31]
 
-    - .dir(N>)
+    - .dir(<E)
 
     - Activate Ta'loh Naeg:
         coord: [1842,891]
@@ -91,6 +91,7 @@ _route:
 
     - .dir(N) to hill:
         coord: [1871.5,810.5]
+        notes: Silent shrooms spawn randomly around the stump. Good for a little extra food.
 
     - .dir(BLSS)
 
@@ -104,12 +105,15 @@ _route:
             - to: [3637.5,2098]
             - to: [3783,2106.5]
 
-    - _Npc<Purah>:
+    - _Npc::SheikaFemale<Purah>:
         coord: [3774.95, 357.00, 2126.02]
         comment: SNAP
+        notes: Remember to take a picture.
+        split-type: UserDefined
 
     - _Warp::Shrine::TalohNaeg
-
+  
+  - The First Three:
     - _Npc::SheikaFemale<Impa 2>:
         line-color: rgb(255,0,255)
         coord: [1772.71, 229.43, 984.31]
@@ -119,7 +123,7 @@ _route:
     - _Material<Fairy,3>:
         coord: [1976.00, 267.50, 846.00]
 
-    - .dir(W>) to hill:
+    - .dir(W) to hill:
         coord: [1871.5,810.5]
 
     - .dir(BLSS)
@@ -128,7 +132,7 @@ _route:
 
     # - _Warp::Shrine::KehNamut
 
-  - Northern Memories:
+    - .dir(S) + .dir(S) to step-up spot
 
     - .dir(BLSS)
 
@@ -143,9 +147,9 @@ _route:
 
     - _Memory::SpringofPower
 
-    - _Warp::Shrine::KehNamut
+    - _Warp::Tower::GreatPlateau
 
-  - Memories and Castle:
+  - The Big Loop:
     - .dir(BLSS)
     - _Memory::SanidinPark:
         line-color: yellow
@@ -153,7 +157,9 @@ _route:
     - .dir(NE)
     - _Material<Mighty Thistle,2>:
         coord: [-1850.36, 267.77, 334.06]
-        comment: Get food as well
+        comment: Get a lot of food as well
+
+    - .dir(E) + .dir(N) midair to thin trees
 
     - .dir(BLSS)
     - _Memory::AncientColumns
@@ -165,9 +171,11 @@ _route:
     - Do your fav any% castle route
     - _Material<Razorshroom,1>:
         coord: [-390.02, 166.73, -842.82]
+        comment: In wooden crate.
 
     - _Cook<Attack Up>:
         comment: 3 Razorshroom + 2 Thistle
+        notes: This gives you a 4:10 meal.
 
     - _Memory::HyruleCastle
 
@@ -187,14 +195,12 @@ _route:
     - _Warp::Shrine::KehNamut:
         line-color: blue
 
-  - 12th Memory:
+  - Final Memories:
 
     - .dir(BLSS)
     - _Memory::KaraKaraBazaar
 
     - _Warp::Shrine::TalohNaeg
-
-  - Final Memory:
 
     - _Npc::SheikaFemale<Impa 3>:
         line-color: rgb(0,255,0)
@@ -209,8 +215,13 @@ _route:
 
   - Best Ending:
 
+    - .dir(BLSS) to Sanctum
+
+    - Do any% boss rush
+
     - Ganon:
         icon: calamity
         coord: [-254.00, 191.01, -1061.37]
+        split-type: UserDefined
 
     - Smile
