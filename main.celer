@@ -7,100 +7,75 @@ _project:
   url: ""
   version: 0.1.0
 _route:
+  - (==) This is the current (2022-06-15) wr run by .link([Player 5]https://www.speedrun.com/user/Player5). .link([Video link]https://youtu.be/QS-A7G8jg8Q)
   - Plateau:
     - SOR clip:
         notes: Do not activate time of day.
 
-    - .dir(Run)
-
-    - .loc(Boko Camp)
-
-    - _Material<Spicy Pepper,6>:
-        line-color: rgb(204,204,204)
+    - Run to .loc(Boko Camp)
+    - _Equipment::Shield<Pot Lid>:
+        coord: [-952.34, 238.33, 1959.44]
+    - _Equipment::Weapon<Boko Spear>
+    - _Material<6 Pepper + 3 Shroom>:
         coord: [-965.30, 238.52, 1956.67]
         notes: Probably get the Steak too.
 
-    - _Equipment::Shield<Pot Lid>:
-        coord: [-952.34, 238.33, 1959.44]
-
-    - _Equipment::Weapon<Boko Spear>
-
-    - .dir(Run and shield surf):
-        notes: First Zelda cutscene.
-
-    - .loc(Temple of Time):
+    - Run, surf to .loc(Temple of Time):
         notes: Clip in.
-
     - _Chest<Traveler's Bow>:
         coord: [-832.43, 222.00, 1963.11]
-
     - _Material<Arrow,5>
 
-    - .dir(BLSS) with pot:
-        notes: .link([Skew fix]https://twitter.com/TheKoroks/status/1477147629427433472?s=20&t=67Yr65osvtxvFD8Voud8vQ)
-
+    - BLSS
     - _Shrine::JaBaij:
         comment: Clip in
-
     - _Npc<Old Man>:
         coord: [-461.70, 178.41, 1990.18]
         comment: Text options 2-1-1-2
 
-    - .dir(BLSS)
+    - BLSS
     - _Tower::GreatPlateau
 
-    - .dir(WB over invisible wall):
+    - WB:
         notes: Lag stop looking at forest and fall damage cancel
-
     - _Shrine::OmanAu
 
-    - _Material<Hyrule Herb, 5>:
-        coord: [-709.74, 171.46, 1481.88]
-
-    - .dir(BLSS) to .loc(tree):
+    - BLSS + Tree WB:
         coord: [-839,2273.5]
+    - _Shrine::OwaDaim
 
-    - .dir(Tree WB)
-    - _Shrine::OwaDaim:
-        comment: Skip hammer.
-
-    - .dir(Boulder Launch + BLSS):
+    - Boulder Launch + BLSS:
         notes: 8 hits on boulder (4 and 4)
     - _Shrine::KehNamut
 
-    - .dir(BLSS)
+    - BLSS
     - _Npc<Paraglider>:
         icon: king
         coord: [-812, 1966.1012189378007]
         split-type: UserDefined
 
   - Camera:
-    - .dir(BLSS)
-
+    - BLSS
     - _Npc::SheikaFemale<Impa 1>:
-        line-color: rgb(221,160,221)
         movements:
             - to: [1784.43, 228.91, 986.46]
             - to: [1772.71, 229.43, 984.31]
 
     - .dir(<E)
-
     - Activate Ta'loh Naeg:
         coord: [1842,891]
         icon: shrine
 
     - .dir(N) to hill:
         coord: [1871.5,810.5]
-        notes: Silent shrooms spawn randomly around the stump. Good for a little extra food.
 
-    - .dir(BLSS)
-
-    - .loc(Blue Flame):
+    - BLSS to .loc(Blue Flame)
+    - Smuggle to Tech Lab:
         coord: [3447.5,1982]
         comment: Use Boko Spear.
 
-    - .dir(E> + E)
-    - _Discover<Activate Tech Lab>:
+    - Activate Tech Lab:
+        icon: location
         movements:
             - to: [3637.5,2098]
             - to: [3783,2106.5]
@@ -108,114 +83,113 @@ _route:
     - _Npc::SheikaFemale<Purah>:
         coord: [3774.95, 357.00, 2126.02]
         comment: SNAP
-        notes: Remember to take a picture.
         split-type: UserDefined
 
-    - _Warp::Shrine::TalohNaeg
+    - WARP
+    - _Warp::Shrine::TalohNaeg:
+        line-color: magenta
   
   - The First Three:
     - _Npc::SheikaFemale<Impa 2>:
-        line-color: rgb(255,0,255)
         coord: [1772.71, 229.43, 984.31]
 
     - .dir(<E)
-
-    - _Material<Fairy,3>:
+    - _Material<4 Fairy>:
         coord: [1976.00, 267.50, 846.00]
 
     - .dir(W) to hill:
         coord: [1871.5,810.5]
-
-    - .dir(BLSS)
-
+    - BLSS
     - _Memory::LanayruRoad
-
-    # - _Warp::Shrine::KehNamut
-
-    - .dir(S) + .dir(S) to step-up spot
-
-    - .dir(BLSS)
-
-    - _Memory::EldinCanyon
-
-    - .dir(BLSS)
-
-    - _Material<Razorshroom,2>:
-        coord: [3404.77, 232.64, -2359.69]
-
-    - .dir(NE)
-
-    - _Memory::SpringofPower
-
-    - _Warp::Tower::GreatPlateau
-
-  - The Big Loop:
-    - .dir(BLSS)
-    - _Memory::SanidinPark:
-        line-color: yellow
-
-    - .dir(NE)
-    - _Material<Mighty Thistle,2>:
-        coord: [-1850.36, 267.77, 334.06]
-        comment: Get a lot of food as well
-
-    - .dir(E) + .dir(N) midair to thin trees
-
-    - .dir(BLSS)
-    - _Memory::AncientColumns
-
-    - .dir(BLSS)
-    - _Memory::IrchPlain
-
-    - .dir(BLSS)
-    - Do your fav any% castle route
-    - _Material<Razorshroom,1>:
-        coord: [-390.02, 166.73, -842.82]
-        comment: In wooden crate.
-
-    - _Cook<Attack Up>:
-        comment: 3 Razorshroom + 2 Thistle
-        notes: This gives you a 4:10 meal.
-
-    - _Memory::HyruleCastle
-
-    - .dir(BLSS)
-    - _Memory::SacredGrounds
-
-    - .dir(E>) super + .dir(E>>) turn
-    - _Memory::HyruleField
-
-    - .dir(S) + .dir(BLSS)
-    - _Memory::WestNecluda
-
-    - .dir(BLSS)
-
-    - _Memory::LakeKolomo
-
-    - _Warp::Shrine::KehNamut:
-        line-color: blue
-
-  - Final Memories:
-
-    - .dir(BLSS)
-    - _Memory::KaraKaraBazaar
 
     - _Warp::Shrine::TalohNaeg
 
+    - BLSS + .dir(W) + .dir(N)
+    - _Memory::EldinCanyon
+
+    - BLSS
+    - _Material<2 Razorshroom>:
+        coord: [3404.77, 232.64, -2359.69]
+
+    - .dir(NE)
+    - _Memory::SpringofPower
+
+    - WARP
+    - _Warp::Tower::GreatPlateau:
+        line-color: yellow
+
+  - The Big Loop:
+    - BLSS
+    - _Memory::SanidinPark
+
+    - BLSS + .dir(N)
+    - _Material<2 Thistle 2 Radish>:
+        coord: [-1850.36, 267.77, 334.06]
+
+    - .dir(<W) + .dir(W)
+    - Get some durians
+    - BLSS
+    - _Memory::AncientColumns
+
+    - BLSS
+    - _Memory::IrchPlain
+
+    - BLSS
+    - Enter .loc(Castle)
+    - .!!(Do 3 AA any% castle)
+    - _Equipment::Weapon<2 Claymores>
+    - _Material<Razorshroom,1>:
+        coord: [-390.02, 166.73, -842.82]
+        comment: In wooden crate.
+    - _Equipment::Weapon<Boomerang>
+    - _Cook<Attack Up>:
+        comment: 3 Razorshroom + 2 Thistle
+        notes: This gives you a 4:10 meal.
+    - Clip out + 2 WBs
+    - _Equipment::Weapon<Edge of Duality>:
+        coord: [-311.81, 256.46, -997.30]
+    - _Equipment::Bow<Royal Guard's Bow>:
+        comment: and 5 Normal Arrows
+    - _Memory::HyruleCastle
+
+    - BLSS
+    - _Memory::SacredGrounds
+
+    - BLSS
+    - _Memory::HyruleField
+
+    - .dir(S) + BLSS
+    - _Memory::WestNecluda
+
+    - .dir(BLSS)
+    - _Memory::LakeKolomo
+
+    - WARP
+    - _Warp::Shrine::KehNamut:
+        line-color: lime
+
+  - Final Memories:
+
+    - BLSS
+    - _Memory::KaraKaraBazaar
+
+    - WARP
+    - _Warp::Shrine::TalohNaeg
+
     - _Npc::SheikaFemale<Impa 3>:
-        line-color: rgb(0,255,0)
         coord: [1772.71, 229.43, 984.31]
+        comment: Get Champion's Tunic
 
-    - .dir(<E) + .dir(<S) + .dir(<S)
-
+    - .dir(E) + .dir(<S) + .dir(S.)
     - _Memory::AshSwamp
 
+    - WARP
     - _Warp::Shrine::KehNamut:
         line-color: red
 
   - Best Ending:
 
-    - .dir(BLSS) to Sanctum
+    - BLSS to Sanctum
 
     - Do any% boss rush
 
